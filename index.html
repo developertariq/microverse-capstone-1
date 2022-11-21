@@ -14,8 +14,11 @@
     />
   <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type="text/css">
   <link rel="stylesheet" href="/css/main.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 </head>
 <body>  
+  
+  <a name="0" />
   <div class="wrap topmenu_wrap">
     <nav class="top_menu">
       <ul>
@@ -27,6 +30,25 @@
       </ul>
     </nav>
   </div>
+
+  <div class="mobile_logo_wrap">
+    <a href="/"><img src="/image/logo.png" alt="Project Management Training" /></a>
+  </div>
+  <div class="mobile_menu_wrap">
+    <div class="mobile_menu_button">
+      <a href="#" id="mobile_menu_btn"><img src="/image/mobile_menu.png" alt="" /></a>
+    </div>
+    <div class="mobile_menu_back" id="mobile_menu_back">
+      <div class="mobile_b_menu right">
+        <a href="#" id="close_mobile_menu">
+          <img src="/image/close_mobile_menu.png" alt="" />
+        </a>
+      </div>
+      <div class="mobile_b_menu"><a href="#">Home</a></div>
+      <div class="mobile_b_menu"><a href="#">Speakers</a></div>
+      <div class="mobile_b_menu"><a href="#">About</a></div>
+    </div>
+  </div>
   <div class="wrap header_wrap">
     <div class="main_menu">
       <div class="main_logo">
@@ -37,10 +59,12 @@
       <nav class="menus">
         <ul>
           <li><a href="#">Home</a></li>
+          <li><a href="#">Speakers</a></li>
           <li><a href="#">About</a></li>
         </ul>
       </nav>    
     </div>
   </div>
+  <script src="/js/main.js"></script>
 </body>
 </html>
