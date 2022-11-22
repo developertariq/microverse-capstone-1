@@ -60,6 +60,14 @@ img {
   margin: 1em 0;
 }
 
+.mobile_logo_wrap img {
+  display: block;
+  width: 130px;
+  height: 45px;
+  text-align: center;
+  margin: 1em auto;
+}
+
 @media screen and (min-width: 768px) {
   .mobile_logo_wrap {
     display: none;
