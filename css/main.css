@@ -3,15 +3,25 @@ body {
   margin: 0;
   padding: 0;
   font-family: lato, sans-serif;
-  color: #333; 
+  color: #333;
+}
+
+
+.background_img {
+  background-image: url("/image/bg.jpeg");
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
 }
 
 img {
-  border: 0; 
+  border: 0;
 }
 
 .wrap {
-  width: 100%; 
+  width: 100%;
 }
 
 .wrap > nav,
@@ -21,7 +31,7 @@ img {
 .wrap > article {
   max-width: 1100px;
   width: 98%;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -30,13 +40,14 @@ img {
   .wrap > main,
   .wrap > section,
   .wrap > article {
-    width: 90%; } 
+    width: 90%;
+  }
 }
 
 .header_wrap {
-  -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
   position: relative;
 }
 
@@ -50,7 +61,7 @@ img {
   display: block;
   width: 100%;
   text-align: center;
-  margin: 1em 0; 
+  margin: 1em 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -67,7 +78,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .mobile_menu_wrap {
-    display: none; 
+    display: none;
   }
 }
 
@@ -75,19 +86,19 @@ img {
   position: absolute;
   top: 35px;
   left: 20px;
-  z-index: 1; 
+  z-index: 1;
 }
 
 .mobile_menu_wrap .mobile_menu_button img {
-  width: 20px; 
+  width: 20px;
 }
 
 .mobile_menu_wrap .mobile_menu_back {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   z-index: 10;
-  display: none;
+  /*display: none;*/
   width: 85%;
   background: #272a32;
   filter: alpha(opacity=95);
@@ -109,14 +120,9 @@ img {
   text-align: right;
 }
 
-.mobile_menu_wrap .mobile_menu_back .mobile_b_menu a {
-  color: #fff;
-  text-decoration: none;
-}
-  
 .mobile_menu_wrap .mobile_menu_back .mobile_b_menu:last-child {
   border-bottom: 1px solid #3c3f46;
-} 
+}
 
 .topmenu_wrap {
   background-color: #3e3e3e;
@@ -127,7 +133,7 @@ img {
     display: none;
   }
 }
-      
+
 .top_menu {
   height: 36px;
   background-color: #3e3e3e;
@@ -163,7 +169,6 @@ img {
   vertical-align: middle;
 }
 
-
 .main_menu {
   height: 80px;
   line-height: 80px;
@@ -189,7 +194,7 @@ img {
   position: relative;
 }
 
-  .main_menu .menus ul {
+.main_menu .menus ul {
   margin: 15px 0;
   padding: 0;
   list-style: none;
@@ -197,13 +202,13 @@ img {
   float: right;
 }
 
-  .main_menu .menus ul li {
+.main_menu .menus ul li {
   margin: 0;
   padding: 0;
   display: inline-block;
 }
 
-  .main_menu .menus ul li a {
+.main_menu .menus ul li a {
   margin: 0 25px;
   color: #888;
   font-size: 0.938em;
@@ -212,6 +217,87 @@ img {
   vertical-align: middle;
 }
 
+.mobile_menu_wrap .mobile_menu_back .mobile_b_menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.mobile_menu_wrap .mobile_menu_back .mobile_b_menu a:hover,
 .main_menu .menus ul li a:hover {
   color: #ef513c;
 }
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.main_invite_wrap {
+  height: 855px;
+  background-image: url(/images/base/main_big.png);
+  background-repeat: repeat-x;
+  background-position: center; }
+  @media screen and (max-width: 640px) {
+    .main_invite_wrap {
+      background: url("/images/base/mobile_intro_bg.png") no-repeat top;
+      height: auto; } }
+  @media screen and (max-width: 1000px) and (min-width: 640px) {
+    .main_invite_wrap {
+      background-position: top center;
+      background-size: auto;
+      height: auto; } }
+  .main_invite_wrap section {
+    padding-top: 140px; }
+    @media screen and (max-width: 1000px) {
+      .main_invite_wrap section {
+        text-align: center;
+        padding-top: 51px; } }
+    @media screen and (max-width: 1000px) {
+      .main_invite_wrap section img {
+        width: 90%; } }
+    .main_invite_wrap section div.message {
+      text-align: justify;
+      height: 90px;
+      width: 631px;
+      border: 4px solid #fff;
+      background-color: #f7f7f8;
+      margin: 15px 0 40px;
+      line-height: 220%;
+      padding: 10px 25px 0;
+      font-size: 1.125em; }
+      @media screen and (max-width: 1000px) {
+        .main_invite_wrap section div.message {
+          margin: 17px 0.75em 0 0.75em;
+          width: calc(100% - 2.500em);
+          padding: 1.0em 0.5em;
+          line-height: 150%;
+          font-size: 13px;
+          height: auto;
+          text-align: justify;
+          word-break: break-all; } }
+    .main_invite_wrap section div.location, .main_invite_wrap section .schedule .timetable table tr td div.oneline_location, .schedule .timetable table tr td .main_invite_wrap section 
+    .main_invite_wrap section div.oneline_location .dateinfo {
+      font: bold 36px Verdana;
+      color: #575757;
+      letter-spacing: -2px;
+      margin-bottom: 10px; }
+      @media screen and (max-width: 1000px) {
+        .main_invite_wrap section div.location .dateinfo, .main_invite_wrap section .schedule .timetable table tr td div.oneline_location .dateinfo, .schedule .timetable table tr td .main_invite_wrap section div.oneline_location .dateinfo {
+          font-size: 15px;
+          font-weight: bold;
+          width: 90%;
+          display: inline-block;
+          text-align: center;
+          margin-bottom: 4px;
+          letter-spacing: 0; } }
+    .main_invite_wrap section div.location .locate, .main_invite_wrap section .schedule .timetable table tr td div.oneline_location .locate, .schedule .timetable table tr td .main_invite_wrap section div.oneline_location .locate {
+      text-align: left; }
+      @media screen and (max-width: 1000px) {
+        .main_invite_wrap section div.location .locate, .main_invite_wrap section .schedule .timetable table tr td div.oneline_location .locate, .schedule .timetable table tr td .main_invite_wrap section div.oneline_location .locate {
+          font-size: 15px;
+          width: 90%;
+          display: inline-block;
+          text-align: center; } }
