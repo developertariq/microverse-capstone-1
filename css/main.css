@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: lato, sans-serif;
-  color: #272a31;
+  color: #d3d3d3;
 }
 
 img {
@@ -186,7 +186,7 @@ img {
 }
 
 .main_menu .menus ul li a:hover {
-  color: #ef513c;
+  color: #ec5242;
 }
 
 .main_menu .menus ul li.live a,
@@ -201,7 +201,7 @@ img {
 }
 
 .mobile_menu_wrap .mobile_menu_back .mobile_b_menu a:hover {
-  color: #ef513c;
+  color: #ec5242;
 }
 
 .main_heading {
@@ -224,7 +224,9 @@ img {
   padding: 1em 0.5em;
   line-height: 175%;
   font-size: 0.815em;
-  font-weight: bold;
+  font-weight: 500;
+  word-spacing: 0.15em;
+  letter-spacing: 0.1em;
   height: auto;
   text-align: left;
   background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
@@ -301,7 +303,7 @@ img {
 }
 
 .program_sub_title {
-  color: #ef513c;
+  color: #ec5242;
   font-size: 1.1em;
   font-weight: bold;
   padding-left: 7px;
@@ -414,7 +416,7 @@ img {
 .speakers section .work {
   display: flex;
   font-size: 13px;
-  color: #ff4f38;
+  color: #ec5242;
   text-align: left;
 }
 
@@ -543,7 +545,7 @@ img {
 }
 
 .cc_color {
-  color: #f0513d;
+  color: #ec5242;
 }
 
 .font-size-14 {
@@ -620,26 +622,32 @@ h2.normal {
   .main_heading section div.message {
     text-align: left;
     height: 150px;
-    width: 631px;
+    width: 601px;
     border: 4px solid #fff;
-    background-color: #f7f7f8;
     margin: 15px 0 40px;
-    line-height: 220%;
-    padding: 10px 25px 0;
-    font-size: 1.125em;
+    line-height: 175%;
+    font-size: 0.95em;
+    font-weight: 500;
+    word-spacing: 0.15em;
+    letter-spacing: 0.1em;
     margin-left: 3em;
   }
 
+  .main_heading section div.location {
+    margin-bottom: 10px;
+    margin-left: 1.5em;
+  }
+
   .main_heading section div.location .dateinfo {
+    font-size: 1.815em;
+    font-weight: bolder;
     text-align: left;
   }
 
-  .main_heading section div.location {
-    font-size: 36px;
-    font-weight: bold;
-    letter-spacing: -2px;
-    margin-bottom: 10px;
-    margin-left: 1.5em;
+  .main_heading section div.location .locate {
+    font-size: 1.115em;
+    font-weight: bolder;
+    text-align: left;
   }
 
   .program_info {
@@ -825,7 +833,7 @@ h2.normal {
   }
 
   .page_footer .cc_rights a {
-    color: #ef513c !important;
+    color: #ec5242 !important;
     text-decoration: none;
   }
 
