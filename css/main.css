@@ -231,7 +231,7 @@ img {
 
 .main_heading {
   height: auto;
-  background-image: url(/image/main_big.png);
+  background-image: url('./image/main_big.png');
   background-repeat: repeat-x;
   background-position: center;
   background-size: auto;
@@ -239,7 +239,7 @@ img {
 
 .main_heading section {
   text-align: center;
-  padding: 51px 24px;
+  padding: 51px 16px;
   width: 100%;
 }
 
@@ -252,6 +252,10 @@ img {
   font-weight: bold;
   height: auto;
   text-align: left;
+}
+
+.main_heading section div.location {
+  padding-left: 1em;
 }
 
 .main_heading section div.location .dateinfo {
@@ -315,7 +319,7 @@ img {
   text-align: center;
   padding-top: 79px;
   color: #fff;
-  height: 334px;
+  height: auto;
   margin: 0 auto;
   overflow: auto;
   width: 95%;

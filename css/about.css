@@ -1,6 +1,6 @@
 
 .about_heading {
-  background: #f7f7f8 url(../image/about_bg_01.png) center repeat-x;
+  background: #f7f7f8 url('/image/about_bg_01.png') center repeat-x;
   height: auto;
   overflow: auto;
 }
