@@ -103,6 +103,14 @@
 }
 
 @media screen and (min-width: 768px) {
+  .wrap > nav,
+  .wrap > div,
+  .wrap > section {
+    max-width: 1100px;
+    width: 98%;
+    margin: 0 auto;
+  }
+
   .about_heading {
     height: auto;
     background-image: url('../image/about_bg_01.png');
