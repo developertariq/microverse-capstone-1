@@ -1,8 +1,10 @@
 
 .about_heading {
-  background: #f7f7f8 url('../image/about_bg_01.png') center repeat-x;
   height: auto;
-  overflow: auto;
+  background-image: url('../image/about_bg_01.png');
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: auto;
 }
 
 .about_heading section {
@@ -50,6 +52,14 @@
 }
 
 @media screen and (min-width: 768px) {
+  .about_heading {
+    height: auto;
+    background-image:  url('../image/about_bg_01.png');
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: auto;
+  }
+
   .about_heading section .heading {
     line-height: 160%;
     font-size: 1.125em;
