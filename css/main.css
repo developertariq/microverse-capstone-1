@@ -114,8 +114,12 @@ img {
 
 .top_menu ul li a {
   color: #fff;
-  font-size: 1em;
+  font-size: 0.8em;
   text-decoration: none;
+}
+
+.top_menu ul li a i.fab {
+  font-size: 1.35em;
 }
 
 .top_menu ul li a:hover {
