@@ -1,4 +1,3 @@
-
 document.getElementById('mobile_menu_btn').addEventListener('click', () => {
   const mobileMenuBack = document.querySelector('#mobile_menu_back');
   mobileMenuBack.height = document.querySelector('body').height;

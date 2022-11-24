@@ -6,16 +6,6 @@ body {
   color: #333;
 }
 
-
-.background_img {
-  background-image: url("/image/bg.jpeg");
-  width: 100%;
-  height: auto;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  background-position: center !important;
-}
-
 img {
   border: 0;
 }
@@ -24,33 +14,8 @@ img {
   width: 100%;
 }
 
-.wrap > nav,
-.wrap > div,
-.wrap > section {
-  max-width: 1100px;
-  width: 98%;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 768px) {
-  .wrap > nav,
-  .wrap > div,
-  .wrap > section {
-    width: 90%;
-  }
-}
-
-.header_wrap {
-  -webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
-  position: relative;
-}
-
-@media screen and (max-width: 768px) {
-  .header_wrap {
-    display: none;
-  }
+.header {
+  display: none;
 }
 
 .mobile_logo_wrap {
@@ -68,29 +33,24 @@ img {
   margin: 1em auto;
 }
 
-@media screen and (min-width: 768px) {
-  .mobile_logo_wrap {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .mobile_logo_wrap {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .mobile_menu_wrap {
-    display: none;
-  }
-}
-
 .mobile_menu_wrap .mobile_menu_button {
   position: absolute;
   top: 35px;
   left: 20px;
   z-index: 1;
+}
+
+.logos img {
+  width: 90%;
+}
+
+.speaker_image img {
+  width: 110px;
+  height: auto;
+}
+
+.main_heading section img {
+  width: 90%;
 }
 
 .mobile_menu_wrap .mobile_menu_button img {
@@ -102,18 +62,16 @@ img {
   top: 0;
   left: 0;
   z-index: 10;
-  /*display: none;*/
-  width: 85%;
+  width: 100%;
   background: #272a32;
-  filter: alpha(opacity=95);
   opacity: 0.95;
 }
 
 .mobile_menu_wrap .mobile_menu_back .mobile_b_menu {
   position: relative;
   font-size: 1em;
-  height: 2.5em;
-  line-height: 2.5em;
+  height: 3em;
+  line-height: 3em;
   color: #fff;
   width: calc(85% - 4px);
   padding: 0 25px;
@@ -129,13 +87,7 @@ img {
 }
 
 .topmenu_wrap {
-  background-color: #3e3e3e;
-}
-
-@media screen and (max-width: 768px) {
-  .topmenu_wrap {
-    display: none;
-  }
+  display: none;
 }
 
 .top_menu {
@@ -187,7 +139,7 @@ img {
 .main_menu .main_logo img {
   width: 130px;
   height: 50px;
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 .main_menu .menus {
@@ -228,9 +180,632 @@ img {
   text-decoration: none;
 }
 
-.mobile_menu_wrap .mobile_menu_back .mobile_b_menu a:hover,
 .main_menu .menus ul li a:hover {
   color: #ef513c;
+}
+
+.main_menu .menus ul li.live a,
+.mobile_menu_wrap .mobile_menu_back .mobile_b_menu.live a {
+  font-size: 1.125em;
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: center;
+  border: 5px solid #ef513c;
+  padding: 0 15px;
+  display: inline-block;
+}
+
+.mobile_menu_wrap .mobile_menu_back .mobile_b_menu a:hover {
+  color: #ef513c;
+}
+
+@media screen and (min-width: 768px) {
+  .wrap > nav,
+  .wrap > div,
+  .wrap > section {
+    max-width: 1100px;
+    width: 98%;
+    margin: 0 auto;
+  }
+
+  .header {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+    display: block;
+    position: relative;
+  }
+
+  .mobile_logo_wrap {
+    display: none;
+  }
+
+  .mobile_menu_wrap {
+    display: none;
+  }
+
+  .topmenu_wrap {
+    display: block;
+    background-color: #3e3e3e;
+  }
+}
+
+.main_heading {
+  height: auto;
+  background-image: url(/image/main_big.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.main_heading section {
+  text-align: center;
+  padding: 51px 24px;
+  width: 100%;
+}
+
+.main_heading section div.message {
+  margin: 17px 0.75em 0 0.75em;
+  width: calc(100% - 2.5em);
+  padding: 1em 0.5em;
+  line-height: 175%;
+  font-size: 0.815em;
+  font-weight: bold;
+  height: auto;
+  text-align: left;
+}
+
+.main_heading section div.location .dateinfo {
+  font-size: 1.225em;
+  font-weight: bolder;
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 4px;
+  letter-spacing: 0;
+}
+
+.main_heading section div.location .locate {
+  font-size: 0.8em;
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .main_heading {
+    height: 855px;
+  }
+
+  .main_heading section div.message {
+    text-align: justify;
+    height: 150px;
+    width: 631px;
+    border: 4px solid #fff;
+    background-color: #f7f7f8;
+    margin: 15px 0 40px;
+    line-height: 220%;
+    padding: 10px 25px 0;
+    font-size: 1.125em;
+  }
+
+  .main_heading section div.location .dateinfo {
+    text-align: center;
+  }
+
+  .main_heading section div.location {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    margin-bottom: 10px;
+  }
+}
+
+.program_info {
+  background-image: url(/image/pattern_bg.png);
+  background-repeat: repeat;
+  background-color: #272a32;
+  height: auto;
+  padding-bottom: 80px;
+}
+
+.program_info section {
+  text-align: center;
+  padding-top: 79px;
+  color: #fff;
+  height: 334px;
+  margin: 0 auto;
+  overflow: auto;
+  width: 95%;
+}
+
+.program_info section h1 {
+  font-size: 1.105em;
+  font-weight: 600;
+  margin: 0;
+}
+
+.program_info section .program_list {
+  width: 100%;
+  position: relative;
+  margin: 0 0 0.5em 0;
+  padding: 16px 0;
+  vertical-align: middle;
+  display: flex;
+  height: auto;
+  overflow: auto;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.program_info section .program_list div {
+  vertical-align: middle;
+  display: inline-block;
+  height: auto;
+}
+
+.program_info section .program_list .program_icon {
+  float: left;
+  margin: 0 0 0 0.5em;
+  padding: 0;
+}
+
+.program_sub_title {
+  color: #ef513c;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding-left: 7px;
+  float: left;
+  margin: auto 0.3em;
+  width: 26%;
+  text-align: start;
+}
+
+.program_sub_description {
+  width: calc(74% - 6.5em);
+  float: left;
+  font-size: 1.05em;
+  padding: 0 0.5em 0 0;
+  text-align: left;
+  word-break: keep-all;
+  overflow: auto;
+  height: auto;
+}
+
+.program_info section .program_list .program_sub_description {
+  width: calc(74% - 90px);
+  float: left;
+  text-align: left;
+  font-size: 0.75em;
+  margin-top: 0;
+  padding: 0;
+  word-break: keep-all;
+}
+
+.program_info .show_programs {
+  vertical-align: middle;
+  width: 100%;
+  margin: 37px 0;
+}
+
+.program_info .show_programs a.web {
+  font-size: 16px;
+  display: none;
+}
+
+.program_info .show_programs button.mobile {
+  display: block;
+  margin: 0 auto;
+  width: 285px;
+  height: 76px;
+  align-items: center;
+  border: none;
+  color: #fff;
+  background-color: #ec5242;
+  font-weight: 700;
+  word-spacing: 0.2em;
+}
+
+@media screen and (min-width: 768px) {
+  .program_info {
+    height: 637px;
+  }
+
+  .program_info section .program_list {
+    margin: 0 0 0 3px;
+    padding: 0;
+    border: 0;
+    float: left;
+    width: calc(20% - 3px);
+    height: 228px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .program_info section .program_list div {
+    position: relative;
+  }
+
+  .program_info section .program_list .program_icon {
+    margin-top: 21px;
+  }
+
+  .program_info section .program_list .program_sub_title {
+    margin-top: 17px;
+  }
+
+  .program_info section .program_list .program_sub_description {
+    text-align: center;
+    word-break: keep-all;
+    color: #fff;
+    font-size: 0.813em;
+    padding: 0 17px;
+    line-height: 1.5em;
+    margin-top: 22px;
+  }
+
+  .program_info section .program_list .program_sub_description br {
+    line-height: 150%;
+  }
+
+  .program_info .show_programs {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 1.125em;
+    color: #fff;
+  }
+
+  .program_info .show_programs a {
+    font-size: 1.125em;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .program_info .show_programs a.web {
+    display: block;
+  }
+
+  .program_info .show_programs a.mobile {
+    display: none;
+  }
+
+  .program_info .show_programs a:hover {
+    text-decoration: underline;
+  }
+
+  .program_info .apply_summit_wrap {
+    margin: 50px auto 0;
+    text-align: center;
+    line-height: 20px;
+  }
+
+  .program_info .apply_summit {
+    width: 344px;
+    height: 80px;
+    font-size: 1.125em;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #ef513c;
+    color: #fff;
+    border: 0;
+  }
+}
+
+.speakers {
+  background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+  height: auto;
+  padding: 16px;
+}
+
+.speakers section {
+  text-align: center;
+  padding-top: 79px;
+  color: #272a32;
+  height: auto;
+  margin: 0 auto;
+}
+
+.speakers section h1 {
+  font-size: 1.105em;
+  font-weight: 600;
+  margin: 0;
+}
+
+.speaker {
+  display: flex;
+  margin: 0;
+  border: 0;
+  width: 100%;
+  float: left;
+  height: 249px;
+  gap: 8px;
+}
+
+.speaker_image {
+  float: left;
+  width: 108px;
+  margin-right: 0.5em;
+}
+
+.speaker_info {
+  display: inline-flex;
+  flex-direction: column;
+  text-align: left;
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+}
+
+.speakers section .main_name {
+  display: flex;
+  height: auto;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  vertical-align: top;
+  margin-top: 0;
+}
+
+.speakers section .work {
+  display: flex;
+  font-size: 13px;
+  color: #ff4f38;
+  text-align: left;
+}
+
+.speakers section .speaker_description {
+  font-size: 13px;
+  text-align: justify;
+  word-break: break-all;
+  float: left;
+  line-height: 150%;
+}
+
+.see_more_speaker {
+  display: inline;
+  text-align: center;
+  justify-content: center;
+}
+
+.see_more_speaker button {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .speakers section .guide_line {
+    width: 24px;
+    border-top: 1px solid #c2c2c2;
+    margin-bottom: 24px;
+  }
+
+  .speakers section .speaker_description {
+    word-break: keep-all;
+    text-align: left;
+    font-size: 0.875em;
+    padding-right: 1em;
+    line-height: 24px;
+  }
+
+  .speakers section .speaker_profile {
+    display: inline-block;
+    width: 324px;
+    text-align: left;
+    margin: 10px 0 0 48px;
+  }
+
+  .speakers section .speaker_list {
+    overflow: auto;
+    height: auto;
+  }
+
+  .speakers section .speaker_list .speaker {
+    margin: 0;
+    border: 0;
+    width: calc(50% - 10px);
+    float: left;
+    height: 249px;
+  }
+}
+
+.speakers .more_speakers {
+  text-align: right;
+  font-size: 16px;
+}
+
+.partners {
+  text-align: center;
+  background-color: #272a32;
+  color: #d3d3d3;
+  height: 287px;
+  padding: 24px;
+  margin: 0 auto;
+}
+
+.partner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.partners .title {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sponsor_logos {
+  display: flex;
+  text-align: center;
+  overflow: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.logos {
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 19.25px;
+  }
+
+  .partner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  .sponsor_logos {
+    display: inline-flex;
+    overflow: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+    width: 80%;
+    position: relative;
+  }
+
+  .logos {
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+  }
+
+  .logos img {
+    width: 70%;
+  }
+}
+
+.page_footer {
+  display: flex;
+  line-height: 1.6;
+  height: auto;
+  width: 100%;
+  overflow: auto;
+  padding: 24px;
+  color: #272a31;
+}
+
+.footer_black {
+  background-color: #2e2e2e;
+  color: #fff;
+}
+
+.page_footer .cc_logo {
+  float: none;
+  height: auto;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.page_footer .cc_logo img {
+  margin-bottom: 10px;
+  height: 25px;
+}
+
+.page_footer .cc_rights {
+  padding-top: 0;
+  height: auto;
+  font-size: 0.75em;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.page_footer .cc_rights p {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .page_footer {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 30px;
+    height: 230px;
+    font-size: 1.075em;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .page_footer .cc_logo {
+    text-align: right;
+    padding-top: 55px;
+    float: right;
+  }
+
+  .page_footer .cc_logo img {
+    height: 35px;
+  }
+
+  .page_footer .cc_rights {
+    vertical-align: middle;
+    float: left;
+    padding-top: 35px;
+    width: 80%;
+  }
+
+  .page_footer .cc_rights a {
+    color: #ef513c !important;
+    text-decoration: none;
+  }
+
+  .page_footer .cc_rights a:hover {
+    text-decoration: underline;
+  }
+
+  .page_footer .cc_rights p {
+    display: block;
+  }
+}
+
+.bottom_line {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.bottom_line_thick {
+  height: 10px;
+  width: 100%;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 15px;
+}
+
+.cc_color {
+  color: #f0513d;
+}
+
+.font-size-13 {
+  font-size: 0.813em;
+}
+
+.font-size-14 {
+  font-size: 0.875em;
+}
+
+.font-size-24 {
+  font-size: 1.2em;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.text_underline {
+  width: 53px;
+  height: 16px;
+  border-bottom: 1px solid #ef513c;
+  margin: 0 auto 54px;
 }
 
 .show {
@@ -241,69 +816,14 @@ img {
   display: none;
 }
 
-.main_invite_wrap {
-  height: 855px;
-  background-image: url(/images/base/main_big.png);
-  background-repeat: repeat-x;
-  background-position: center; }
-  @media screen and (max-width: 640px) {
-    .main_invite_wrap {
-      background: url("/images/base/mobile_intro_bg.png") no-repeat top;
-      height: auto; } }
-  @media screen and (max-width: 1000px) and (min-width: 640px) {
-    .main_invite_wrap {
-      background-position: top center;
-      background-size: auto;
-      height: auto; } }
-  .main_invite_wrap section {
-    padding-top: 140px; }
-    @media screen and (max-width: 1000px) {
-      .main_invite_wrap section {
-        text-align: center;
-        padding-top: 51px; } }
-    @media screen and (max-width: 1000px) {
-      .main_invite_wrap section img {
-        width: 90%; } }
-    .main_invite_wrap section div.message {
-      text-align: justify;
-      height: 90px;
-      width: 631px;
-      border: 4px solid #fff;
-      background-color: #f7f7f8;
-      margin: 15px 0 40px;
-      line-height: 220%;
-      padding: 10px 25px 0;
-      font-size: 1.125em; }
-      @media screen and (max-width: 1000px) {
-        .main_invite_wrap section div.message {
-          margin: 17px 0.75em 0 0.75em;
-          width: calc(100% - 2.500em);
-          padding: 1.0em 0.5em;
-          line-height: 150%;
-          font-size: 13px;
-          height: auto;
-          text-align: justify;
-          word-break: break-all; } }
-    .main_invite_wrap section div.location, .main_invite_wrap section .schedule .timetable table tr td div.oneline_location, .schedule .timetable table tr td .main_invite_wrap section 
-    .main_invite_wrap section div.oneline_location .dateinfo {
-      font: bold 36px Verdana;
-      color: #575757;
-      letter-spacing: -2px;
-      margin-bottom: 10px; }
-      @media screen and (max-width: 1000px) {
-        .main_invite_wrap section div.location .dateinfo, .main_invite_wrap section .schedule .timetable table tr td div.oneline_location .dateinfo, .schedule .timetable table tr td .main_invite_wrap section div.oneline_location .dateinfo {
-          font-size: 15px;
-          font-weight: bold;
-          width: 90%;
-          display: inline-block;
-          text-align: center;
-          margin-bottom: 4px;
-          letter-spacing: 0; } }
-    .main_invite_wrap section div.location .locate, .main_invite_wrap section .schedule .timetable table tr td div.oneline_location .locate, .schedule .timetable table tr td .main_invite_wrap section div.oneline_location .locate {
-      text-align: left; }
-      @media screen and (max-width: 1000px) {
-        .main_invite_wrap section div.location .locate, .main_invite_wrap section .schedule .timetable table tr td div.oneline_location .locate, .schedule .timetable table tr td .main_invite_wrap section div.oneline_location .locate {
-          font-size: 15px;
-          width: 90%;
-          display: inline-block;
-          text-align: center; } }
+h1.normal {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.875em;
+}
+
+h2.normal {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.5em;
+}
