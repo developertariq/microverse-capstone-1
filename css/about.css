@@ -54,7 +54,7 @@
 @media screen and (min-width: 768px) {
   .about_heading {
     height: auto;
-    background-image:  url('../image/about_bg_01.png');
+    background-image: url('../image/about_bg_01.png');
     background-repeat: repeat-x;
     background-position: center;
     background-size: auto;
