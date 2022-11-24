@@ -231,7 +231,7 @@ img {
 
 .main_heading {
   height: auto;
-  background-image: url('/image/main_big.png');
+  background-image: url('../image/main_big.png');
   background-repeat: repeat-x;
   background-position: center;
   background-size: auto;
@@ -308,7 +308,7 @@ img {
 }
 
 .program_info {
-  background-image: url('/image/pattern_bg.png');
+  background-image: url('../image/pattern_bg.png');
   background-repeat: repeat;
   background-color: #272a32;
   height: auto;
