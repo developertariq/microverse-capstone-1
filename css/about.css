@@ -51,6 +51,56 @@
   margin-top: 25px;
 }
 
+.logo_section {
+  padding: 24px;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.logo_section .logo_section_title {
+  font-size: 24px;
+  word-break: keep-all;
+}
+
+.logo_section .logo_details {
+  text-align: center;
+}
+
+.logo_section .logo_details br.nobr {
+  display: none;
+}
+
+.logo_section .logo_details img {
+  width: 98%;
+}
+
+.past_summit .past_image img {
+  width: 100%;
+  padding: 5px 0;
+}
+
+.past_summit {
+  vertical-align: middle;
+  margin: 70px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.past_summit .past_summit_title {
+  font-size: 24px;
+}
+
+.past_summit .title_description {
+  font-size: 0.875em;
+  line-height: 24px;
+  margin-bottom: 33px;
+}
+
+.about_heading section .heading_detail img {
+  margin: 14px 0 6px 0;
+}
+
 @media screen and (min-width: 768px) {
   .about_heading {
     height: auto;
@@ -90,33 +140,7 @@
   .about_heading section .questions {
     word-break: keep-all;
   }
-}
 
-.logo_section {
-  padding: 24px;
-  margin: 0 auto;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.logo_section .logo_section_title {
-  font-size: 24px;
-  word-break: keep-all;
-}
-
-.logo_section .logo_details {
-  text-align: center;
-}
-
-.logo_section .logo_details br.nobr {
-  display: none;
-}
-
-.logo_section .logo_details img {
-  width: 98%;
-}
-
-@media screen and (min-width: 768px) {
   .logo_section .logo_section_title {
     font-size: 1.875em;
     margin-top: 70px;
@@ -131,36 +155,8 @@
   .logo_section .logo_details img {
     margin: 55px 0;
   }
-}
 
-.past_summit .past_image img {
-  width: 100%;
-  padding: 5px 0;
-}
-
-.past_summit {
-  vertical-align: middle;
-  margin: 70px auto;
-  text-align: center;
-  padding: 20px;
-}
-
-.past_summit .past_summit_title {
-  font-size: 24px;
-}
-
-.past_summit .title_description {
-  font-size: 0.875em;
-  line-height: 24px;
-  margin-bottom: 33px;
-}
-
-@media screen and (min-width: 768px) {
   .past_summit .past_image img {
     width: 49%;
   }
-}
-
-.about_heading section .heading_detail img {
-  margin: 14px 0 6px 0;
 }

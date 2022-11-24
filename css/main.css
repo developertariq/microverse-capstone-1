@@ -204,35 +204,6 @@ img {
   color: #ef513c;
 }
 
-@media screen and (min-width: 768px) {
-  .wrap > nav,
-  .wrap > div,
-  .wrap > section {
-    max-width: 1100px;
-    width: 98%;
-    margin: 0 auto;
-  }
-
-  .header {
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
-    display: block;
-    position: relative;
-  }
-
-  .mobile_logo_wrap {
-    display: none;
-  }
-
-  .mobile_menu_wrap {
-    display: none;
-  }
-
-  .topmenu_wrap {
-    display: block;
-    background-color: #3e3e3e;
-  }
-}
-
 .main_heading {
   height: auto;
   background-image: url('../image/main_big.png');
@@ -279,37 +250,6 @@ img {
   display: inline-block;
   text-align: left;
   margin-top: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .main_heading {
-    height: 855px;
-  }
-
-  .main_heading section div.message {
-    text-align: left;
-    height: 150px;
-    width: 631px;
-    border: 4px solid #fff;
-    background-color: #f7f7f8;
-    margin: 15px 0 40px;
-    line-height: 220%;
-    padding: 10px 25px 0;
-    font-size: 1.125em;
-    margin-left: 3em;
-  }
-
-  .main_heading section div.location .dateinfo {
-    text-align: left;
-  }
-
-  .main_heading section div.location {
-    font-size: 36px;
-    font-weight: bold;
-    letter-spacing: -2px;
-    margin-bottom: 10px;
-    margin-left: 1.5em;
-  }
 }
 
 .program_info {
@@ -416,83 +356,6 @@ img {
   word-spacing: 0.2em;
 }
 
-@media screen and (min-width: 768px) {
-  .program_info {
-    height: 607px;
-  }
-
-  .program_info section {
-    height: auto;
-  }
-
-  .program_info section .program_list {
-    display: inline;
-    flex-direction: column;
-    margin: 0 3px 0 3px;
-    padding: 0;
-    border: 0;
-    float: left;
-    width: calc(20% - 6px);
-    height: 238px;
-    background: rgba(255, 255, 255, 0.1);
-  }
-
-  .program_info section .program_list div {
-    display: block;
-    position: relative;
-    text-align: center;
-  }
-
-  .program_info section .program_list .program_icon {
-    margin: 10px auto;
-    width: 100%;
-  }
-
-  .program_info section .program_list .program_sub_title {
-    text-align: center;
-    font-size: 1em;
-    margin: 5px auto 10px;
-    width: 100%;
-  }
-
-  .program_info section .program_list .program_sub_description {
-    text-align: center;
-    color: #fff;
-    font-size: 0.813em;
-    padding: 0 17px;
-    line-height: 1.5em;
-    margin-top: 0;
-    width: 100%;
-    vertical-align: top;
-  }
-
-  .program_info .show_programs {
-    width: 100%;
-    vertical-align: middle;
-    text-align: center;
-    font-size: 1.125em;
-    color: #fff;
-    margin: 5em auto;
-  }
-
-  .program_info .show_programs button {
-    display: none;
-  }
-
-  .program_info .show_programs a {
-    font-size: 1.125em;
-    color: #fff;
-  }
-
-  .program_info .show_programs a.web {
-    display: inline-block;
-  }
-
-  .program_info .show_programs button.mobile {
-    display: none;
-  }
-}
-
 .speakers {
   background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
   height: auto;
@@ -587,52 +450,6 @@ img {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
-  .speakers section .guide_line {
-    width: 24px;
-    border-top: 1px solid #c2c2c2;
-    margin-bottom: 24px;
-  }
-
-  .speakers section .speaker_description {
-    word-break: keep-all;
-    text-align: left;
-    font-size: 0.875em;
-    padding-right: 1em;
-    line-height: 24px;
-  }
-
-  .speakers section .speaker_profile {
-    display: inline-block;
-    width: 324px;
-    text-align: left;
-    margin: 10px 0 0 48px;
-  }
-
-  .speakers section .speaker_list {
-    overflow: auto;
-    height: auto;
-  }
-
-  .speaker:nth-child(n+3):nth-child(-n+6) {
-    display: flex;
-    overflow: auto;
-    height: auto;
-  }
-
-  .speakers section .speaker_list .speaker {
-    margin: 0;
-    border: 0;
-    width: calc(50% - 10px);
-    float: left;
-    height: 249px;
-  }
-
-  .see_more_speaker {
-    display: none;
-  }
-}
-
 .speakers .more_speakers {
   text-align: right;
   font-size: 16px;
@@ -674,44 +491,6 @@ img {
   margin: 0;
 }
 
-@media screen and (min-width: 768px) {
-  .title {
-    vertical-align: middle;
-    text-align: center;
-    font-size: 19.25px;
-  }
-
-  .partner {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-top: 30px;
-  }
-
-  .sponsor_logos {
-    display: inline-flex;
-    overflow: auto;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    vertical-align: middle;
-    text-align: center;
-    width: 80%;
-    position: relative;
-  }
-
-  .logos {
-    vertical-align: middle;
-    display: inline-block;
-    position: relative;
-    margin-right: 10px;
-  }
-
-  .logos img {
-    width: 70%;
-  }
-}
-
 .page_footer {
   display: flex;
   line-height: 1.6;
@@ -750,48 +529,6 @@ img {
 
 .page_footer .cc_rights p {
   display: none;
-}
-
-@media screen and (min-width: 768px) {
-  .page_footer {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    gap: 30px;
-    height: 230px;
-    font-size: 1.075em;
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .page_footer .cc_logo {
-    text-align: right;
-    padding-top: 55px;
-    float: right;
-  }
-
-  .page_footer .cc_logo img {
-    height: 35px;
-  }
-
-  .page_footer .cc_rights {
-    vertical-align: middle;
-    float: left;
-    padding-top: 35px;
-    width: 80%;
-  }
-
-  .page_footer .cc_rights a {
-    color: #ef513c !important;
-    text-decoration: none;
-  }
-
-  .page_footer .cc_rights a:hover {
-    text-decoration: underline;
-  }
-
-  .page_footer .cc_rights p {
-    display: block;
-  }
 }
 
 .bottom_line {
@@ -846,4 +583,257 @@ h2.normal {
   margin: 0;
   font-weight: normal;
   font-size: 1.5em;
+}
+
+@media screen and (min-width: 768px) {
+  .wrap > nav,
+  .wrap > div,
+  .wrap > section {
+    max-width: 1100px;
+    width: 98%;
+    margin: 0 auto;
+  }
+
+  .header {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+    display: block;
+    position: relative;
+  }
+
+  .mobile_logo_wrap {
+    display: none;
+  }
+
+  .mobile_menu_wrap {
+    display: none;
+  }
+
+  .topmenu_wrap {
+    display: block;
+    background-color: #3e3e3e;
+  }
+
+  .main_heading {
+    height: 855px;
+  }
+
+  .main_heading section div.message {
+    text-align: left;
+    height: 150px;
+    width: 631px;
+    border: 4px solid #fff;
+    background-color: #f7f7f8;
+    margin: 15px 0 40px;
+    line-height: 220%;
+    padding: 10px 25px 0;
+    font-size: 1.125em;
+    margin-left: 3em;
+  }
+
+  .main_heading section div.location .dateinfo {
+    text-align: left;
+  }
+
+  .main_heading section div.location {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    margin-bottom: 10px;
+    margin-left: 1.5em;
+  }
+
+  .program_info {
+    height: 607px;
+  }
+
+  .program_info section {
+    height: auto;
+  }
+
+  .program_info section .program_list {
+    display: inline;
+    flex-direction: column;
+    margin: 0 3px 0 3px;
+    padding: 0;
+    border: 0;
+    float: left;
+    width: calc(20% - 6px);
+    height: 238px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .program_info section .program_list div {
+    display: block;
+    position: relative;
+    text-align: center;
+  }
+
+  .program_info section .program_list .program_icon {
+    margin: 10px auto;
+    width: 100%;
+  }
+
+  .program_info section .program_list .program_sub_title {
+    text-align: center;
+    font-size: 1em;
+    margin: 5px auto 10px;
+    width: 100%;
+  }
+
+  .program_info section .program_list .program_sub_description {
+    text-align: center;
+    color: #fff;
+    font-size: 0.813em;
+    padding: 0 17px;
+    line-height: 1.5em;
+    margin-top: 0;
+    width: 100%;
+    vertical-align: top;
+  }
+
+  .program_info .show_programs {
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.125em;
+    color: #fff;
+    margin: 5em auto;
+  }
+
+  .program_info .show_programs button {
+    display: none;
+  }
+
+  .program_info .show_programs a {
+    font-size: 1.125em;
+    color: #fff;
+  }
+
+  .program_info .show_programs a.web {
+    display: inline-block;
+  }
+
+  .program_info .show_programs button.mobile {
+    display: none;
+  }
+
+  .speakers section .guide_line {
+    width: 24px;
+    border-top: 1px solid #c2c2c2;
+    margin-bottom: 24px;
+  }
+
+  .speakers section .speaker_description {
+    word-break: keep-all;
+    text-align: left;
+    font-size: 0.875em;
+    padding-right: 1em;
+    line-height: 24px;
+  }
+
+  .speakers section .speaker_profile {
+    display: inline-block;
+    width: 324px;
+    text-align: left;
+    margin: 10px 0 0 48px;
+  }
+
+  .speakers section .speaker_list {
+    overflow: auto;
+    height: auto;
+  }
+
+  .speaker:nth-child(n+3):nth-child(-n+6) {
+    display: flex;
+    overflow: auto;
+    height: auto;
+  }
+
+  .speakers section .speaker_list .speaker {
+    margin: 0;
+    border: 0;
+    width: calc(50% - 10px);
+    float: left;
+    height: 249px;
+  }
+
+  .see_more_speaker {
+    display: none;
+  }
+
+  .title {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 19.25px;
+  }
+
+  .partner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  .sponsor_logos {
+    display: inline-flex;
+    overflow: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+    width: 80%;
+    position: relative;
+  }
+
+  .logos {
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+  }
+
+  .logos img {
+    width: 70%;
+  }
+
+  .page_footer {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 30px;
+    height: 230px;
+    font-size: 1.075em;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .page_footer .cc_logo {
+    text-align: right;
+    padding-top: 55px;
+    float: right;
+  }
+
+  .page_footer .cc_logo img {
+    height: 35px;
+  }
+
+  .page_footer .cc_rights {
+    vertical-align: middle;
+    float: left;
+    padding-top: 35px;
+    width: 80%;
+  }
+
+  .page_footer .cc_rights a {
+    color: #ef513c !important;
+    text-decoration: none;
+  }
+
+  .page_footer .cc_rights a:hover {
+    text-decoration: underline;
+  }
+
+  .page_footer .cc_rights p {
+    display: block;
+  }
 }
