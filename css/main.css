@@ -219,7 +219,7 @@ img {
 }
 
 .main_heading section .message {
-  margin: 17px 0.75em 0 0.75em;
+  margin: 17px 0.75em 0.75em 0.75em;
   width: calc(100% - 2.5em);
   padding: 1em 0.5em;
   line-height: 175%;
