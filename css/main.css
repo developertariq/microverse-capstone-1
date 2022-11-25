@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: lato, sans-serif;
-  color: #747171;
+  color: #d3d3d3;
 }
 
 img {
@@ -208,7 +208,7 @@ img {
   height: auto;
   background-image: url('../image/main_big.png');
   background-repeat: repeat-x;
-  background-position: center;
+  background-position: left;
   background-size: auto;
 }
 
@@ -229,7 +229,7 @@ img {
   letter-spacing: 0.1em;
   height: auto;
   text-align: left;
-  background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+  border: 3px solid #fff;
 }
 
 .main_heading section div.location {
@@ -616,26 +616,27 @@ h2.normal {
   }
 
   .main_heading {
-    height: 855px;
+    height: 755px;
+    background-position: center;
   }
 
   .main_heading section div.message {
     text-align: left;
-    height: 150px;
-    width: 601px;
-    border: 4px solid #fff;
+    height: auto;
+    width: 480px;
+    border: 3px solid #fff;
     margin: 15px 0 40px;
     line-height: 175%;
     font-size: 0.95em;
     font-weight: 500;
     word-spacing: 0.15em;
-    letter-spacing: 0.1em;
-    margin-left: 3em;
+    letter-spacing: 0.05em;
+    margin-left: 3.8em;
   }
 
   .main_heading section div.location {
     margin-bottom: 10px;
-    margin-left: 1.5em;
+    margin-left: 2.8em;
   }
 
   .main_heading section div.location .dateinfo {
