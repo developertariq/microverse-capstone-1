@@ -3,7 +3,7 @@
   height: auto;
   background-image: url('../image/about_bg_01.png');
   background-repeat: repeat-x;
-  background-position: center;
+  background-position: left;
   background-size: auto;
 }
 
@@ -32,9 +32,14 @@
   text-align: center;
   height: auto;
   overflow: auto;
-  padding: 20px 20px;
+  padding: 20px;
   background-color: #fff;
-  border: 1px solid #d3d3d3;
+  border: 1px solid #f5f3f3;
+  font-size: 0.875em;
+}
+
+.about_heading section .heading_detail br {
+  display: none;
 }
 
 .about_heading section .heading_detail .font-size-24 {
@@ -49,47 +54,6 @@
   padding: 24px;
   font-size: 0.725em;
   margin-top: 25px;
-}
-
-@media screen and (min-width: 768px) {
-  .about_heading {
-    height: auto;
-    background-image:  url('../image/about_bg_01.png');
-    background-repeat: repeat-x;
-    background-position: center;
-    background-size: auto;
-  }
-
-  .about_heading section .heading {
-    line-height: 160%;
-    font-size: 1.125em;
-    margin-bottom: 33px;
-    text-align: center;
-  }
-
-  .about_heading section .heading br {
-    display: block;
-  }
-
-  .about_heading section .heading_detail {
-    margin: 0 auto 33px auto;
-    padding-top: 38px;
-    line-height: 25px;
-    border: 1px solid #dfdfdf;
-    width: 760px;
-    height: 172px;
-    background-color: #fff;
-    font-size: 0.875em;
-    text-align: center;
-  }
-
-  .about_heading section .heading_detail br {
-    display: block;
-  }
-
-  .about_heading section .questions {
-    word-break: keep-all;
-  }
 }
 
 .logo_section {
@@ -116,23 +80,6 @@
   width: 98%;
 }
 
-@media screen and (min-width: 768px) {
-  .logo_section .logo_section_title {
-    font-size: 1.875em;
-    margin-top: 70px;
-  }
-
-  .logo_section .logo_details {
-    font-size: 0.875em;
-    line-height: 24px;
-    margin-bottom: 70px;
-  }
-
-  .logo_section .logo_details img {
-    margin: 55px 0;
-  }
-}
-
 .past_summit .past_image img {
   width: 100%;
   padding: 5px 0;
@@ -155,12 +102,84 @@
   margin-bottom: 33px;
 }
 
+.about_heading section .heading_detail img {
+  margin: 14px 0 6px 0;
+}
+
 @media screen and (min-width: 768px) {
+  .wrap > nav,
+  .wrap > div,
+  .wrap > section {
+    max-width: 1100px;
+    width: 98%;
+    margin: 0 auto;
+  }
+
+  .about_heading {
+    width: 98%;
+    height: auto;
+    background-position: center;
+  }
+
+  .about_heading section h1 {
+    letter-spacing: 0.08em;
+    font-weight: bolder;
+  }
+
+  .about_heading section .heading {
+    line-height: 160%;
+    font-size: 1.125em;
+    margin-bottom: 33px;
+    text-align: center;
+  }
+
+  .about_heading section .heading br {
+    display: block;
+  }
+
+  .about_heading section .heading_detail {
+    margin: 0 auto 33px auto;
+    padding-top: 38px;
+    line-height: 25px;
+    border: 1px solid #d3d3d3;
+    width: 960px;
+    height: auto;
+    background-color: #fff;
+    font-size: 0.855em;
+    font-weight: 500;
+    word-spacing: 0.15em;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+
+  .about_heading section .heading_detail br {
+    display: block;
+  }
+
+  .about_heading section .questions {
+    word-break: keep-all;
+    font-size: 0.675em;
+    font-weight: 500;
+    word-spacing: 0.15em;
+    letter-spacing: 0.1em;
+  }
+
+  .logo_section .logo_section_title {
+    font-size: 1.875em;
+    margin-top: 70px;
+  }
+
+  .logo_section .logo_details {
+    font-size: 0.875em;
+    line-height: 24px;
+    margin-bottom: 70px;
+  }
+
+  .logo_section .logo_details img {
+    margin: 55px 0;
+  }
+
   .past_summit .past_image img {
     width: 49%;
   }
-}
-
-.about_heading section .heading_detail img {
-  margin: 14px 0 6px 0;
 }

@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: lato, sans-serif;
-  color: #272a31;
+  color: #d3d3d3;
 }
 
 img {
@@ -63,7 +63,7 @@ img {
   left: 0;
   z-index: 10;
   width: 100%;
-  background: #272a32;
+  background: #272a31;
   opacity: 0.95;
 }
 
@@ -114,8 +114,12 @@ img {
 
 .top_menu ul li a {
   color: #fff;
-  font-size: 1em;
+  font-size: 0.8em;
   text-decoration: none;
+}
+
+.top_menu ul li a i.fab {
+  font-size: 1.35em;
 }
 
 .top_menu ul li a:hover {
@@ -182,7 +186,7 @@ img {
 }
 
 .main_menu .menus ul li a:hover {
-  color: #ef513c;
+  color: #ec5242;
 }
 
 .main_menu .menus ul li.live a,
@@ -197,43 +201,14 @@ img {
 }
 
 .mobile_menu_wrap .mobile_menu_back .mobile_b_menu a:hover {
-  color: #ef513c;
-}
-
-@media screen and (min-width: 768px) {
-  .wrap > nav,
-  .wrap > div,
-  .wrap > section {
-    max-width: 1100px;
-    width: 98%;
-    margin: 0 auto;
-  }
-
-  .header {
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
-    display: block;
-    position: relative;
-  }
-
-  .mobile_logo_wrap {
-    display: none;
-  }
-
-  .mobile_menu_wrap {
-    display: none;
-  }
-
-  .topmenu_wrap {
-    display: block;
-    background-color: #3e3e3e;
-  }
+  color: #ec5242;
 }
 
 .main_heading {
   height: auto;
   background-image: url('../image/main_big.png');
   background-repeat: repeat-x;
-  background-position: center;
+  background-position: left;
   background-size: auto;
 }
 
@@ -244,15 +219,17 @@ img {
 }
 
 .main_heading section .message {
-  margin: 17px 0.75em 0 0.75em;
+  margin: 17px 0.75em 0.75em 0.75em;
   width: calc(100% - 2.5em);
   padding: 1em 0.5em;
   line-height: 175%;
   font-size: 0.815em;
-  font-weight: bold;
+  font-weight: 500;
+  word-spacing: 0.15em;
+  letter-spacing: 0.1em;
   height: auto;
   text-align: left;
-  background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+  border: 3px solid #fff;
 }
 
 .main_heading section div.location {
@@ -275,37 +252,6 @@ img {
   display: inline-block;
   text-align: left;
   margin-top: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .main_heading {
-    height: 855px;
-  }
-
-  .main_heading section div.message {
-    text-align: left;
-    height: 150px;
-    width: 631px;
-    border: 4px solid #fff;
-    background-color: #f7f7f8;
-    margin: 15px 0 40px;
-    line-height: 220%;
-    padding: 10px 25px 0;
-    font-size: 1.125em;
-    margin-left: 3em;
-  }
-
-  .main_heading section div.location .dateinfo {
-    text-align: left;
-  }
-
-  .main_heading section div.location {
-    font-size: 36px;
-    font-weight: bold;
-    letter-spacing: -2px;
-    margin-bottom: 10px;
-    margin-left: 1.5em;
-  }
 }
 
 .program_info {
@@ -357,7 +303,7 @@ img {
 }
 
 .program_sub_title {
-  color: #ef513c;
+  color: #ec5242;
   font-size: 1.1em;
   font-weight: bold;
   padding-left: 7px;
@@ -410,84 +356,6 @@ img {
   background-color: #ec5242;
   font-weight: 700;
   word-spacing: 0.2em;
-}
-
-@media screen and (min-width: 768px) {
-  .program_info {
-    height: 607px;
-  }
-
-  .program_info section {
-    height: auto;
-  }
-
-  .program_info section .program_list {
-    display: inline;
-    flex-direction: column;
-    margin: 0 3px 0 3px;
-    padding: 0;
-    border: 0;
-    float: left;
-    width: calc(20% - 6px);
-    height: 238px;
-    background: rgba(255, 255, 255, 0.1);
-  }
-
-  .program_info section .program_list div {
-    display: block;
-    position: relative;
-    text-align: center;
-  }
-
-  .program_info section .program_list .program_icon {
-    margin: 10px auto;
-    width: 100%;
-  }
-
-  .program_info section .program_list .program_sub_title {
-    margin-top: 0;
-    text-align: center;
-    font-size: 1em;
-    margin: 5px auto 10px;
-    width: 100%
-  }
-
-  .program_info section .program_list .program_sub_description {
-    text-align: center;
-    color: #fff;
-    font-size: 0.813em;
-    padding: 0 17px;
-    line-height: 1.5em;
-    margin-top: 0;
-    width: 100%;
-    vertical-align: top;
-  }
-
-  .program_info .show_programs {
-    width: 100%;
-    vertical-align: middle;
-    text-align: center;
-    font-size: 1.125em;
-    color: #fff;
-    margin: 5em auto;
-  }
-
-  .program_info .show_programs button {
-    display: none;
-  }
-
-  .program_info .show_programs a {
-    font-size: 1.125em;
-    color: #fff;
-  }
-
-  .program_info .show_programs a.web {
-    display: inline-block;
-  }
-
-  .program_info .show_programs button.mobile {
-    display: none;
-  }
 }
 
 .speakers {
@@ -548,7 +416,7 @@ img {
 .speakers section .work {
   display: flex;
   font-size: 13px;
-  color: #ff4f38;
+  color: #ec5242;
   text-align: left;
 }
 
@@ -582,52 +450,6 @@ img {
 
 #hidemore {
   display: none;
-}
-
-@media screen and (min-width: 768px) {
-  .speakers section .guide_line {
-    width: 24px;
-    border-top: 1px solid #c2c2c2;
-    margin-bottom: 24px;
-  }
-
-  .speakers section .speaker_description {
-    word-break: keep-all;
-    text-align: left;
-    font-size: 0.875em;
-    padding-right: 1em;
-    line-height: 24px;
-  }
-
-  .speakers section .speaker_profile {
-    display: inline-block;
-    width: 324px;
-    text-align: left;
-    margin: 10px 0 0 48px;
-  }
-
-  .speakers section .speaker_list {
-    overflow: auto;
-    height: auto;
-  }
-
-  .speaker:nth-child(n+3):nth-child(-n+6) {
-    display: flex;
-    overflow: auto;
-    height: auto;
-  }
-
-  .speakers section .speaker_list .speaker {
-    margin: 0;
-    border: 0;
-    width: calc(50% - 10px);
-    float: left;
-    height: 249px;
-  }
-
-  .see_more_speaker {
-    display: none;
-  }
 }
 
 .speakers .more_speakers {
@@ -671,44 +493,6 @@ img {
   margin: 0;
 }
 
-@media screen and (min-width: 768px) {
-  .title {
-    vertical-align: middle;
-    text-align: center;
-    font-size: 19.25px;
-  }
-
-  .partner {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-top: 30px;
-  }
-
-  .sponsor_logos {
-    display: inline-flex;
-    overflow: auto;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    vertical-align: middle;
-    text-align: center;
-    width: 80%;
-    position: relative;
-  }
-
-  .logos {
-    vertical-align: middle;
-    display: inline-block;
-    position: relative;
-    margin-right: 10px;
-  }
-
-  .logos img {
-    width: 70%;
-  }
-}
-
 .page_footer {
   display: flex;
   line-height: 1.6;
@@ -720,7 +504,7 @@ img {
 }
 
 .footer_black {
-  background-color: #2e2e2e;
+  background-color: #272a31;
   color: #fff;
 }
 
@@ -749,48 +533,6 @@ img {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
-  .page_footer {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    gap: 30px;
-    height: 230px;
-    font-size: 1.075em;
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .page_footer .cc_logo {
-    text-align: right;
-    padding-top: 55px;
-    float: right;
-  }
-
-  .page_footer .cc_logo img {
-    height: 35px;
-  }
-
-  .page_footer .cc_rights {
-    vertical-align: middle;
-    float: left;
-    padding-top: 35px;
-    width: 80%;
-  }
-
-  .page_footer .cc_rights a {
-    color: #ef513c !important;
-    text-decoration: none;
-  }
-
-  .page_footer .cc_rights a:hover {
-    text-decoration: underline;
-  }
-
-  .page_footer .cc_rights p {
-    display: block;
-  }
-}
-
 .bottom_line {
   border-bottom: 1px solid #dfdfdf;
 }
@@ -803,11 +545,7 @@ img {
 }
 
 .cc_color {
-  color: #f0513d;
-}
-
-.font-size-13 {
-  font-size: 0.813em;
+  color: #ec5242;
 }
 
 .font-size-14 {
@@ -847,4 +585,264 @@ h2.normal {
   margin: 0;
   font-weight: normal;
   font-size: 1.5em;
+}
+
+@media screen and (min-width: 768px) {
+  .wrap > nav,
+  .wrap > div,
+  .wrap > section {
+    max-width: 1100px;
+    width: 98%;
+    margin: 0 auto;
+  }
+
+  .header {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+    display: block;
+    position: relative;
+  }
+
+  .mobile_logo_wrap {
+    display: none;
+  }
+
+  .mobile_menu_wrap {
+    display: none;
+  }
+
+  .topmenu_wrap {
+    display: block;
+    background-color: #3e3e3e;
+  }
+
+  .main_heading {
+    height: 755px;
+    background-position: center;
+  }
+
+  .main_heading section div.message {
+    text-align: left;
+    height: auto;
+    width: 480px;
+    border: 3px solid #fff;
+    margin: 15px 0 40px;
+    line-height: 175%;
+    font-size: 0.95em;
+    font-weight: 500;
+    word-spacing: 0.15em;
+    letter-spacing: 0.05em;
+    margin-left: 3.8em;
+  }
+
+  .main_heading section div.location {
+    margin-bottom: 10px;
+    margin-left: 2.8em;
+  }
+
+  .main_heading section div.location .dateinfo {
+    font-size: 1.815em;
+    font-weight: bolder;
+    text-align: left;
+  }
+
+  .main_heading section div.location .locate {
+    font-size: 1.115em;
+    font-weight: bolder;
+    text-align: left;
+  }
+
+  .program_info {
+    height: 607px;
+  }
+
+  .program_info section {
+    height: auto;
+  }
+
+  .program_info section .program_list {
+    display: inline;
+    flex-direction: column;
+    margin: 0 3px 0 3px;
+    padding: 0;
+    border: 0;
+    float: left;
+    width: calc(20% - 6px);
+    height: 238px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .program_info section .program_list div {
+    display: block;
+    position: relative;
+    text-align: center;
+  }
+
+  .program_info section .program_list .program_icon {
+    margin: 10px auto;
+    width: 100%;
+  }
+
+  .program_info section .program_list .program_sub_title {
+    text-align: center;
+    font-size: 1em;
+    margin: 5px auto 10px;
+    width: 100%;
+  }
+
+  .program_info section .program_list .program_sub_description {
+    text-align: center;
+    color: #fff;
+    font-size: 0.813em;
+    padding: 0 17px;
+    line-height: 1.5em;
+    margin-top: 0;
+    width: 100%;
+    vertical-align: top;
+  }
+
+  .program_info .show_programs {
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.125em;
+    color: #fff;
+    margin: 5em auto;
+  }
+
+  .program_info .show_programs button {
+    display: none;
+  }
+
+  .program_info .show_programs a {
+    font-size: 1.125em;
+    color: #fff;
+  }
+
+  .program_info .show_programs a.web {
+    display: inline-block;
+  }
+
+  .program_info .show_programs button.mobile {
+    display: none;
+  }
+
+  .speakers section .guide_line {
+    width: 24px;
+    border-top: 1px solid #c2c2c2;
+    margin-bottom: 24px;
+  }
+
+  .speakers section .speaker_description {
+    word-break: keep-all;
+    text-align: left;
+    font-size: 0.875em;
+    padding-right: 1em;
+    line-height: 24px;
+  }
+
+  .speakers section .speaker_profile {
+    display: inline-block;
+    width: 324px;
+    text-align: left;
+    margin: 10px 0 0 48px;
+  }
+
+  .speakers section .speaker_list {
+    overflow: auto;
+    height: auto;
+  }
+
+  .speaker:nth-child(n+3):nth-child(-n+6) {
+    display: flex;
+    overflow: auto;
+    height: auto;
+  }
+
+  .speakers section .speaker_list .speaker {
+    margin: 0;
+    border: 0;
+    width: calc(50% - 10px);
+    float: left;
+    height: 249px;
+  }
+
+  .see_more_speaker {
+    display: none;
+  }
+
+  .title {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 19.25px;
+  }
+
+  .partner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  .sponsor_logos {
+    display: inline-flex;
+    overflow: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+    width: 80%;
+    position: relative;
+  }
+
+  .logos {
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+  }
+
+  .logos img {
+    width: 70%;
+  }
+
+  .page_footer {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 30px;
+    height: 230px;
+    font-size: 1.075em;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .page_footer .cc_logo {
+    text-align: right;
+    padding-top: 55px;
+    float: right;
+  }
+
+  .page_footer .cc_logo img {
+    height: 35px;
+  }
+
+  .page_footer .cc_rights {
+    vertical-align: middle;
+    float: left;
+    padding-top: 35px;
+    width: 80%;
+  }
+
+  .page_footer .cc_rights a {
+    color: #ec5242 !important;
+    text-decoration: none;
+  }
+
+  .page_footer .cc_rights a:hover {
+    text-decoration: underline;
+  }
+
+  .page_footer .cc_rights p {
+    display: block;
+  }
 }
