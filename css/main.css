@@ -1,0 +1,848 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: lato, sans-serif;
+  color: #d3d3d3;
+}
+
+img {
+  border: 0;
+}
+
+.wrap {
+  width: 100%;
+}
+
+.header {
+  display: none;
+}
+
+.mobile_logo_wrap {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 1em 0;
+}
+
+.mobile_logo_wrap img {
+  display: block;
+  width: 130px;
+  height: 45px;
+  text-align: center;
+  margin: 1em auto;
+}
+
+.mobile_menu_wrap .mobile_menu_button {
+  position: absolute;
+  top: 35px;
+  left: 20px;
+  z-index: 1;
+}
+
+.logos img {
+  width: 90%;
+}
+
+.speaker_image img {
+  width: 110px;
+  height: auto;
+}
+
+.main_heading section img {
+  width: 90%;
+}
+
+.mobile_menu_wrap .mobile_menu_button img {
+  width: 20px;
+}
+
+.mobile_menu_wrap .mobile_menu_back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  background: #272a31;
+  opacity: 0.95;
+}
+
+.mobile_menu_wrap .mobile_menu_back .mobile_b_menu {
+  position: relative;
+  font-size: 1em;
+  height: 4em;
+  line-height: 3em;
+  color: #fff;
+  width: calc(100% - 4px);
+  padding: 0 25px;
+  border-top: 1px solid #3c3f46;
+  vertical-align: middle;
+}
+
+.mobile_menu_wrap .mobile_menu_back .mobile_b_menu.right {
+  text-align: right;
+}
+
+.mobile_menu_wrap .mobile_menu_back .mobile_b_menu:last-child {
+  border-bottom: 1px solid #3c3f46;
+}
+
+.topmenu_wrap {
+  display: none;
+}
+
+.top_menu {
+  height: 36px;
+  background-color: #3e3e3e;
+  text-align: right;
+  line-height: 36px;
+  vertical-align: middle;
+}
+
+.top_menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: right;
+}
+
+.top_menu ul li {
+  display: inline-block;
+  margin: 0 20px 0 0;
+  padding: 0;
+}
+
+.top_menu ul li a {
+  color: #fff;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+.top_menu ul li a i.fab {
+  font-size: 1.35em;
+}
+
+.top_menu ul li a:hover {
+  text-decoration: underline;
+}
+
+.top_menu ul li i {
+  vertical-align: middle;
+}
+
+.main_menu {
+  height: 80px;
+  line-height: 80px;
+}
+
+.main_menu .main_logo {
+  width: 130px;
+  height: 50px;
+  float: left;
+}
+
+.main_menu .main_logo img {
+  width: 130px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.main_menu .menus {
+  width: calc(100% - 130px);
+  height: 80px;
+  float: right;
+  color: #000;
+  text-align: right;
+  vertical-align: middle;
+  position: relative;
+}
+
+.main_menu .menus ul {
+  margin: 15px 0;
+  padding: 0;
+  list-style: none;
+  line-height: 40px;
+  float: right;
+}
+
+.main_menu .menus ul li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.main_menu .menus ul li a {
+  margin: 0 25px;
+  color: #888;
+  font-size: 0.938em;
+  font-weight: bold;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.mobile_menu_wrap .mobile_menu_back .mobile_b_menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main_menu .menus ul li a:hover {
+  color: #ec5242;
+}
+
+.main_menu .menus ul li.live a,
+.mobile_menu_wrap .mobile_menu_back .mobile_b_menu.live a {
+  font-size: 1.125em;
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: center;
+  border: 5px solid #ef513c;
+  padding: 0 15px;
+  display: inline-block;
+}
+
+.mobile_menu_wrap .mobile_menu_back .mobile_b_menu a:hover {
+  color: #ec5242;
+}
+
+.main_heading {
+  height: auto;
+  background-image: url('../image/main_big.png');
+  background-repeat: repeat-x;
+  background-position: left;
+  background-size: auto;
+}
+
+.main_heading section {
+  text-align: center;
+  padding: 51px 16px;
+  width: 100%;
+}
+
+.main_heading section .message {
+  margin: 17px 0.75em 0.75em 0.75em;
+  width: calc(100% - 2.5em);
+  padding: 1em 0.5em;
+  line-height: 175%;
+  font-size: 0.815em;
+  font-weight: 500;
+  word-spacing: 0.15em;
+  letter-spacing: 0.1em;
+  height: auto;
+  text-align: left;
+  border: 3px solid #fff;
+}
+
+.main_heading section div.location {
+  padding-left: 1em;
+}
+
+.main_heading section div.location .dateinfo {
+  font-size: 1.225em;
+  font-weight: bolder;
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 4px;
+  letter-spacing: 0;
+}
+
+.main_heading section div.location .locate {
+  font-size: 0.8em;
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+  margin-top: 0;
+}
+
+.program_info {
+  background-image: url('../image/pattern_bg.png');
+  background-repeat: repeat;
+  background-color: #272a32;
+  height: auto;
+  padding-bottom: 80px;
+}
+
+.program_info section {
+  text-align: center;
+  padding-top: 79px;
+  color: #fff;
+  height: auto;
+  margin: 0 auto;
+  overflow: auto;
+  width: 95%;
+}
+
+.program_info section h1 {
+  font-size: 1.105em;
+  font-weight: 600;
+  margin: 0;
+}
+
+.program_info section .program_list {
+  width: 100%;
+  position: relative;
+  margin: 0 0 0.5em 0;
+  padding: 16px 0;
+  vertical-align: middle;
+  display: flex;
+  height: auto;
+  overflow: auto;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.program_info section .program_list div {
+  vertical-align: middle;
+  display: inline-block;
+  height: auto;
+}
+
+.program_info section .program_list .program_icon {
+  float: left;
+  margin: 0 0 0 0.5em;
+  padding: 0;
+}
+
+.program_sub_title {
+  color: #ec5242;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding-left: 7px;
+  float: left;
+  margin: auto 0.3em;
+  width: 26%;
+  text-align: start;
+}
+
+.program_sub_description {
+  width: calc(74% - 6.5em);
+  float: left;
+  font-size: 1.05em;
+  padding: 0 0.5em 0 0;
+  text-align: left;
+  word-break: keep-all;
+  overflow: auto;
+  height: auto;
+}
+
+.program_info section .program_list .program_sub_description {
+  width: calc(74% - 90px);
+  float: left;
+  text-align: left;
+  font-size: 0.75em;
+  margin-top: 0;
+  padding: 0;
+  word-break: keep-all;
+}
+
+.program_info .show_programs {
+  vertical-align: middle;
+  width: 100%;
+  margin: 37px 0;
+}
+
+.program_info .show_programs a.web {
+  font-size: 16px;
+  display: none;
+}
+
+.program_info .show_programs button.mobile {
+  display: block;
+  margin: 0 auto;
+  width: 285px;
+  height: 76px;
+  align-items: center;
+  border: none;
+  color: #fff;
+  background-color: #ec5242;
+  font-weight: 700;
+  word-spacing: 0.2em;
+}
+
+.speakers {
+  background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+  height: auto;
+  padding: 16px;
+}
+
+.speakers section {
+  text-align: center;
+  padding-top: 79px;
+  color: #272a32;
+  height: auto;
+  margin: 0 auto;
+}
+
+.speakers section h1 {
+  font-size: 1.105em;
+  font-weight: 600;
+  margin: 0;
+}
+
+.speaker {
+  display: flex;
+  margin: 0;
+  border: 0;
+  width: 100%;
+  float: left;
+  height: 249px;
+  gap: 8px;
+}
+
+.speaker_image {
+  float: left;
+  width: 108px;
+  margin-right: 0.5em;
+}
+
+.speaker_info {
+  display: inline-flex;
+  flex-direction: column;
+  text-align: left;
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+}
+
+.speakers section .main_name {
+  display: flex;
+  height: auto;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  vertical-align: top;
+  margin-top: 0;
+}
+
+.speakers section .work {
+  display: flex;
+  font-size: 13px;
+  color: #ec5242;
+  text-align: left;
+}
+
+.speakers section .speaker_description {
+  font-size: 13px;
+  text-align: justify;
+  word-break: break-all;
+  float: left;
+  line-height: 150%;
+}
+
+.see_more_speaker {
+  display: inline;
+  text-align: center;
+  justify-content: center;
+}
+
+.see_more_speaker button {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: center;
+  justify-content: center;
+}
+
+.speaker:nth-child(n+3):nth-child(-n+6) {
+  display: none;
+}
+
+#hidemore {
+  display: none;
+}
+
+.speakers .more_speakers {
+  text-align: right;
+  font-size: 16px;
+}
+
+.partners {
+  text-align: center;
+  background-color: #272a32;
+  color: #d3d3d3;
+  height: 287px;
+  padding: 24px;
+  margin: 0 auto;
+}
+
+.partner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.partners .title {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sponsor_logos {
+  display: flex;
+  text-align: center;
+  overflow: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.logos {
+  margin: 0;
+}
+
+.page_footer {
+  display: flex;
+  line-height: 1.6;
+  height: auto;
+  width: 100%;
+  overflow: auto;
+  padding: 24px;
+  color: #272a31;
+}
+
+.footer_black {
+  background-color: #272a31;
+  color: #fff;
+}
+
+.page_footer .cc_logo {
+  float: none;
+  height: auto;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.page_footer .cc_logo img {
+  margin-bottom: 10px;
+  height: 25px;
+}
+
+.page_footer .cc_rights {
+  padding-top: 0;
+  height: auto;
+  font-size: 0.75em;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.page_footer .cc_rights p {
+  display: none;
+}
+
+.bottom_line {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.bottom_line_thick {
+  height: 10px;
+  width: 100%;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 15px;
+}
+
+.cc_color {
+  color: #ec5242;
+}
+
+.font-size-14 {
+  font-size: 0.875em;
+}
+
+.font-size-24 {
+  font-size: 1.2em;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.text_underline {
+  width: 53px;
+  height: 16px;
+  border-bottom: 1px solid #ef513c;
+  margin: 0 auto 54px;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+h1.normal {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.875em;
+}
+
+h2.normal {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.5em;
+}
+
+@media screen and (min-width: 768px) {
+  .wrap > nav,
+  .wrap > div,
+  .wrap > section {
+    max-width: 1100px;
+    width: 98%;
+    margin: 0 auto;
+  }
+
+  .header {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+    display: block;
+    position: relative;
+  }
+
+  .mobile_logo_wrap {
+    display: none;
+  }
+
+  .mobile_menu_wrap {
+    display: none;
+  }
+
+  .topmenu_wrap {
+    display: block;
+    background-color: #3e3e3e;
+  }
+
+  .main_heading {
+    height: 755px;
+    background-position: center;
+  }
+
+  .main_heading section div.message {
+    text-align: left;
+    height: auto;
+    width: 480px;
+    border: 3px solid #fff;
+    margin: 15px 0 40px;
+    line-height: 175%;
+    font-size: 0.95em;
+    font-weight: 500;
+    word-spacing: 0.15em;
+    letter-spacing: 0.05em;
+    margin-left: 3.8em;
+  }
+
+  .main_heading section div.location {
+    margin-bottom: 10px;
+    margin-left: 2.8em;
+  }
+
+  .main_heading section div.location .dateinfo {
+    font-size: 1.815em;
+    font-weight: bolder;
+    text-align: left;
+  }
+
+  .main_heading section div.location .locate {
+    font-size: 1.115em;
+    font-weight: bolder;
+    text-align: left;
+  }
+
+  .program_info {
+    height: 607px;
+  }
+
+  .program_info section {
+    height: auto;
+  }
+
+  .program_info section .program_list {
+    display: inline;
+    flex-direction: column;
+    margin: 0 3px 0 3px;
+    padding: 0;
+    border: 0;
+    float: left;
+    width: calc(20% - 6px);
+    height: 238px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .program_info section .program_list div {
+    display: block;
+    position: relative;
+    text-align: center;
+  }
+
+  .program_info section .program_list .program_icon {
+    margin: 10px auto;
+    width: 100%;
+  }
+
+  .program_info section .program_list .program_sub_title {
+    text-align: center;
+    font-size: 1em;
+    margin: 5px auto 10px;
+    width: 100%;
+  }
+
+  .program_info section .program_list .program_sub_description {
+    text-align: center;
+    color: #fff;
+    font-size: 0.813em;
+    padding: 0 17px;
+    line-height: 1.5em;
+    margin-top: 0;
+    width: 100%;
+    vertical-align: top;
+  }
+
+  .program_info .show_programs {
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.125em;
+    color: #fff;
+    margin: 5em auto;
+  }
+
+  .program_info .show_programs button {
+    display: none;
+  }
+
+  .program_info .show_programs a {
+    font-size: 1.125em;
+    color: #fff;
+  }
+
+  .program_info .show_programs a.web {
+    display: inline-block;
+  }
+
+  .program_info .show_programs button.mobile {
+    display: none;
+  }
+
+  .speakers section .guide_line {
+    width: 24px;
+    border-top: 1px solid #c2c2c2;
+    margin-bottom: 24px;
+  }
+
+  .speakers section .speaker_description {
+    word-break: keep-all;
+    text-align: left;
+    font-size: 0.875em;
+    padding-right: 1em;
+    line-height: 24px;
+  }
+
+  .speakers section .speaker_profile {
+    display: inline-block;
+    width: 324px;
+    text-align: left;
+    margin: 10px 0 0 48px;
+  }
+
+  .speakers section .speaker_list {
+    overflow: auto;
+    height: auto;
+  }
+
+  .speaker:nth-child(n+3):nth-child(-n+6) {
+    display: flex;
+    overflow: auto;
+    height: auto;
+  }
+
+  .speakers section .speaker_list .speaker {
+    margin: 0;
+    border: 0;
+    width: calc(50% - 10px);
+    float: left;
+    height: 249px;
+  }
+
+  .see_more_speaker {
+    display: none;
+  }
+
+  .title {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 19.25px;
+  }
+
+  .partner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  .sponsor_logos {
+    display: inline-flex;
+    overflow: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+    width: 80%;
+    position: relative;
+  }
+
+  .logos {
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+  }
+
+  .logos img {
+    width: 70%;
+  }
+
+  .page_footer {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 30px;
+    height: 230px;
+    font-size: 1.075em;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .page_footer .cc_logo {
+    text-align: right;
+    padding-top: 55px;
+    float: right;
+  }
+
+  .page_footer .cc_logo img {
+    height: 35px;
+  }
+
+  .page_footer .cc_rights {
+    vertical-align: middle;
+    float: left;
+    padding-top: 35px;
+    width: 80%;
+  }
+
+  .page_footer .cc_rights a {
+    color: #ec5242 !important;
+    text-decoration: none;
+  }
+
+  .page_footer .cc_rights a:hover {
+    text-decoration: underline;
+  }
+
+  .page_footer .cc_rights p {
+    display: block;
+  }
+}

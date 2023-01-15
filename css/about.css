@@ -1,0 +1,185 @@
+
+.about_heading {
+  height: auto;
+  background-image: url('../image/about_bg_01.png');
+  background-repeat: repeat-x;
+  background-position: left;
+  background-size: auto;
+}
+
+.about_heading section {
+  height: auto;
+  overflow: auto;
+  text-align: center;
+  padding: 60px 24px 30px;
+  margin: 0 auto;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.about_heading section h1 {
+  color: #ec5242;
+  height: 50px;
+}
+
+.about_heading section img.title_image {
+  width: 98%;
+  margin-bottom: 50px;
+}
+
+.about_heading section .heading_detail {
+  width: 98%;
+  text-align: center;
+  height: auto;
+  overflow: auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #f5f3f3;
+  font-size: 0.875em;
+}
+
+.about_heading section .heading_detail br {
+  display: none;
+}
+
+.about_heading section .heading_detail .font-size-24 {
+  text-align: center;
+}
+
+.about_heading section .heading_detail span {
+  line-height: 36px;
+}
+
+.questions {
+  padding: 24px;
+  font-size: 0.725em;
+  margin-top: 25px;
+}
+
+.logo_section {
+  padding: 24px;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.logo_section .logo_section_title {
+  font-size: 24px;
+  word-break: keep-all;
+}
+
+.logo_section .logo_details {
+  text-align: center;
+}
+
+.logo_section .logo_details br.nobr {
+  display: none;
+}
+
+.logo_section .logo_details img {
+  width: 98%;
+}
+
+.past_summit .past_image img {
+  width: 100%;
+  padding: 5px 0;
+}
+
+.past_summit {
+  vertical-align: middle;
+  margin: 70px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.past_summit .past_summit_title {
+  font-size: 24px;
+}
+
+.past_summit .title_description {
+  font-size: 0.875em;
+  line-height: 24px;
+  margin-bottom: 33px;
+}
+
+.about_heading section .heading_detail img {
+  margin: 14px 0 6px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .wrap > nav,
+  .wrap > div,
+  .wrap > section {
+    max-width: 1100px;
+    width: 98%;
+    margin: 0 auto;
+  }
+
+  .about_heading {
+    width: 98%;
+    height: auto;
+    background-position: center;
+  }
+
+  .about_heading section h1 {
+    letter-spacing: 0.08em;
+    font-weight: bolder;
+  }
+
+  .about_heading section .heading {
+    line-height: 160%;
+    font-size: 1.125em;
+    margin-bottom: 33px;
+    text-align: center;
+  }
+
+  .about_heading section .heading br {
+    display: block;
+  }
+
+  .about_heading section .heading_detail {
+    margin: 0 auto 33px auto;
+    padding-top: 38px;
+    line-height: 25px;
+    border: 1px solid #d3d3d3;
+    width: 960px;
+    height: auto;
+    background-color: #fff;
+    font-size: 0.855em;
+    font-weight: 500;
+    word-spacing: 0.15em;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+
+  .about_heading section .heading_detail br {
+    display: block;
+  }
+
+  .about_heading section .questions {
+    word-break: keep-all;
+    font-size: 0.675em;
+    font-weight: 500;
+    word-spacing: 0.15em;
+    letter-spacing: 0.1em;
+  }
+
+  .logo_section .logo_section_title {
+    font-size: 1.875em;
+    margin-top: 70px;
+  }
+
+  .logo_section .logo_details {
+    font-size: 0.875em;
+    line-height: 24px;
+    margin-bottom: 70px;
+  }
+
+  .logo_section .logo_details img {
+    margin: 55px 0;
+  }
+
+  .past_summit .past_image img {
+    width: 49%;
+  }
+}
